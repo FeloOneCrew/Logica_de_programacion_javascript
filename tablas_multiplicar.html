@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TABLAS DE MULTIPLICAR</title>
+</head>
+<body>
+    <h1>TABLA DE MULTIPLICAR</h1>
+    <script>
+        function saltarLinea()
+        {
+            var NumeroSaltos = "<br>";
+            document.write(NumeroSaltos);
+        }
+
+        function imprimir(datos)
+        {
+            document.write("<big>" + datos + "</big>");
+            saltarLinea();
+        }
+
+        function generarTabla(tabla)
+        {
+            for(var t = 1; t < 11 ; t++) // asi se utiliza un for
+            {
+                var multi = (tabla * t);
+                imprimir(tabla + " * " + t + "   = " + multi);
+            }
+        }
+
+        numTabla = parseInt(prompt("Indicar el número de la tabla de multiplicar: "));
+        generarTabla(numTabla);
+    </script>
+</body>
+</html>

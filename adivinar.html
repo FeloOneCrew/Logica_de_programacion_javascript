@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capturar info con input</title>
+</head>
+<body>
+    <h1>Capturar info con input y ejecutar con un botón</h1>
+    <input type="text">
+    <button>Ejecutar</button>
+
+    <script>
+        var numSecreto = Math.round(Math.random() * 10);
+        var input = document.querySelector("input") // con esto capturariamos la info que ingresemos en el input
+        input.focus();
+
+        function validarInfo()
+        {
+            if(parseInt(input.value) == numSecreto)
+            {
+                alert("Usted acertó");
+            }
+            else
+            {
+                alert("Usted erró");
+            }
+
+            input.value = "";
+            input.focus();
+        }
+
+        var button = document.querySelector("button");
+        button.onclick = validarInfo; // no se coloca validarInfo con sus (), para que me expanda el codigo y me ejecute.
+    </script>
+</body>
+</html>

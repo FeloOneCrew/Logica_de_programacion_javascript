@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function saltarLinea()
+        {
+            NumeroSaltos = "<br><br>";
+            document.write(NumeroSaltos);
+        }
+
+        function imprimir(datos)
+        {
+            alert(datos);
+            saltarLinea();
+        }
+
+        var numero = Math.random() * 10;
+        var numero = Math.round(numero);
+        var intentos = 4;
+        
+        function juegoNumero()
+        {
+            IndicarNumero = parseInt(prompt("Hola, vamos adivinar el número del 1 al 10, tienes " + intentos + " intentos, Por favor Ingresa un número: "));
+            return IndicarNumero;
+        }
+            
+        juegoNumero();
+        
+        while (intentos > 0)
+        {
+            if (IndicarNumero == numero)
+            {
+                    imprimir ("¡Ganaste!, acertaste el número");
+            }
+
+            if (IndicarNumero != numero)
+            {
+                intentos -= 1;
+                imprimir("¡Perdiste!, ese NO es el número " + "tienes " + intentos + " intentos más");
+            }
+
+            if (intentos > 0)
+            {
+                juegoNumero();
+            }
+        }
+
+        if (intentos == 0)
+        {
+            imprimir("¡Perdiste!, ya no tienes mas intentos, el numero correcto es el " + numero);                 
+        }
+
+    </script>
+</body>
+</html>

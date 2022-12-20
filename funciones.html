@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funciones en JS</title>
+</head>
+<body>
+    <SCript>
+        function saltodelinea()
+        {
+            var saltodelinea = "<br><br><br>" // asi puedo utilizar el salto de linea
+
+            document.write(saltodelinea);
+        }
+
+        function imprimir(frase)
+        {
+        
+            document.write(frase);
+            
+        }
+        
+        var tanque = 40;
+        var recorrido = 480;
+        var eficiencia = (recorrido / tanque);
+        document.write("La eficiencia del carro con gasolina es: " + eficiencia + " kilometros por cada litro");
+        saltodelinea(); // asi llamo o invóco a la funcion
+        var tanque = 40;
+        var recorrido = 300;
+        var eficiencia = (recorrido / tanque);
+        imprimir("La eficiencia del carro con alcohol es: " + eficiencia + " kilometros por cada litro");
+    </SCript>
+</body>
+</html>

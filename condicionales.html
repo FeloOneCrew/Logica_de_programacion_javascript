@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puntaje</title>
+</head>
+<body>
+    <h1>Hallar el puntaje de tu equipo </h1>
+    <script>
+        function saltarLinea()
+        {
+            NumeroSaltos = "<br><br>";
+            document.write(NumeroSaltos);
+        }
+
+        function imprimir(datos)
+        {
+            document.write("<big>" + datos + "</big>");
+            saltarLinea();
+        }
+
+        function calcularPuntos(victorias, empates)
+        {
+            TotalPuntos = (victorias * 3) + empates;
+
+            return TotalPuntos
+        }
+
+        var numVictorias = parseInt(prompt("Ingresar el número de victorias de tú equipo."));
+        var numEmpates = parseInt(prompt("Ingresar el número de empates de tú equipo."));
+
+        calcularPuntos(numVictorias, numEmpates);
+        imprimir("El total de  puntos de tu equipo es: " + TotalPuntos + " Puntos");
+
+        if (TotalPuntos > 28)
+        {
+            imprimir("El puntaje del equipo esta mejor que el año pasado");
+        }
+
+        if (TotalPuntos < 28)
+        {
+            imprimir("El puntaje del equipo esta peor que el año pasado");
+        }
+
+        if (TotalPuntos == 28)
+        {
+            imprimir("El puntaje del equipo esta igual que el año pasado");
+        }
+
+
+    
+
+
+    </script>
+</body>
+</html>

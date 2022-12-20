@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>creeper</title>
+</head>
+<body>
+
+    <canvas width="600" height="400"></canvas>
+
+    <script>
+        var pantalla = document.querySelector("canvas");
+        var pincel = pantalla.getContext("2d");
+
+        //Rectangulo gris claro
+        pincel.fillStyle = "lightgrey"; //Propiedad
+        pincel.fillRect(0,0,600,400); //Funcion
+
+        //Rectangulo verde oscuro
+        pincel.fillStyle = "darkgreen "; //Propiedad
+        pincel.fillRect(150,50,350,300); //Funcion
+
+        //Rectangulo izquierdo superior negro
+        pincel.fillStyle = "black "; //Propiedad
+        pincel.fillRect(200,100,90,90); //Funcion
+
+        //Rectangulo derecho superior negro
+        pincel.fillStyle = "black "; //Propiedad
+        pincel.fillRect(360,100,90,90); //Funcion
+
+        //Rectangulo centro  negro
+        pincel.fillStyle = "black "; //Propiedad
+        pincel.fillRect(290,190,70,100); //Funcion}
+
+        //Rectangulo inferior izquierdo  negro
+        pincel.fillStyle = "black "; //Propiedad
+        pincel.fillRect(250,250,40,100); //Funcion
+
+        //Rectangulo inferior derecho  negro
+        pincel.fillStyle = "black "; //Propiedad
+        pincel.fillRect(360,250,40,100); //Funcion    
+    </script>
+    
+</body>
+</html>

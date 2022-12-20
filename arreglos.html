@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>TRABAJAR CON ARRAYS</h1>
+    <input>
+    <button>Ejecutar</button>
+    <script>
+        var contenedor = [];
+        var encontrado = false;
+
+        function numAleatorio()
+        {
+            return Math.round(Math.random() * 10);
+        }
+
+        function ingresarDatosArreglo(num)
+        {
+            for(var n = 1; n <= num; n++)
+            {
+                numSecretos = numAleatorio();
+                buscar = contenedor.find( num =>{ return num == numSecretos})
+                if (buscar == numSecretos | numSecretos == 0 )
+                {
+                    numSecretos = numAleatorio();
+                    n -= 1
+                }
+
+                else
+                {
+                    contenedor.push(numSecretos);
+                }
+            }
+        }
+
+        function validarInfo()
+        {
+            for(var posicion = 0; posicion <=  contenedor.length; posicion++)
+            {
+                if(parseInt(input.value) == contenedor[posicion])
+                {
+                    alert("Usted acertó" + "El numero indicado estaba entre los aleatorios generados " + contenedor);
+                    encontrado = true;
+                    break;
+                }
+            }
+
+            if(encontrado == false)
+            {
+                alert("Usted erró");
+                
+            }
+     
+            input.value = "";
+            input.focus();
+        }
+
+        var numero = parseInt(prompt("¿Cuantos datos aleatorios quiere generar? (1-10) : "));
+        ingresarDatosArreglo(numero);
+
+        var input = document.querySelector("input") // con esto capturariamos la info que ingresemos en el input
+        input.focus();
+        var button = document.querySelector("button");
+        button.onclick = validarInfo; // no se coloca validarInfo con sus (), para que me expanda el codigo y me ejecute.
+
+    </script>
+</body>
+</html>

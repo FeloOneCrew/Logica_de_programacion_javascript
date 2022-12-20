@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ingresar Datos</title>
+</head>
+<body>
+    <script>
+        function saltarLinea()
+        {
+            NumeroSaltos = "<br><br>";
+            document.write(NumeroSaltos);
+        }
+
+        function calcularIMC(peso, altura)
+        {
+            return (peso / (altura * altura));
+        }
+
+        function imprimirIMC(datos)
+        {
+            document.write(datos);
+            saltarLinea();
+        }
+        
+        nombre = prompt("Ingrese el nombre:");
+        pesoInformado = prompt("Ingrese el peso:"); //asi se ingresa datos desde consola por el usuario. prompt("Ingrese el peso:");
+        alturaInformada = parseInt(prompt("Ingrese la altura:")); //Convertir un strin a número (parseInt())
+
+        imcCalculado = calcularIMC(pesoInformado, alturaInformada)
+        imprimirIMC("El IMC calculado de " + nombre + " es: " + imcCalculado)
+
+    </script>
+</body>
+</html>
