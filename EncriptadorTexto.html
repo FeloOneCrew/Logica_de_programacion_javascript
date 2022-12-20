@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+</head>
+<body>
+    <input  type="text" placeholder="Ingresar mensaje" name="inputEncriptar" >
+    <input type="text" placeholder="Ingresar mensaje" name="inputdesEncriptar" >
+
+    <button name = "Encriptar" onclick="encriptar()">Encriptar</button>
+    <button name = "Desencriptar" onclick="desencriptar()">desencriptar</button>
+
+    <script>
+        
+        var input = document.querySelector("input");
+
+        function encriptar()
+        {
+            var arr = [];
+            var arr2 = [];
+            var mensaje = inputEncriptar.value;
+            mensaje = mensaje.toLowerCase()
+            arr = mensaje.split('');
+
+            /*var mensaje2 = input.value;
+            mensaje2 = mensaje2.toLowerCase()
+            mensaje2 = mensaje2.replace(/[e]/g, "enter"); 
+
+            mensaje2 = mensaje2.replace(/[enter]/g, "e"); */
+
+            for(var posicion = 0; posicion <=  arr.length; posicion++)
+            {
+                if (arr[posicion] == "e")
+                {
+                    arr2.push("enter") ;
+                }
+                else
+                {
+                   if(arr[posicion] == "i") 
+                   {
+                        arr2.push("imes") ;
+                   }
+                   else
+                   {
+                        if(arr[posicion] == "a")
+                        {
+                            arr2.push("ai") ;
+                        }
+                        else
+                        {
+                            if(arr[posicion] == "o")
+                            {
+                                arr2.push("ober") ;
+                            } 
+                            
+                            else
+                            {  
+                                if(arr[posicion] == "u")
+                                {
+                                    arr2.push("ufat") ;
+                                }
+
+                                else
+                                {
+                                    arr2.push(arr[posicion]);
+                                }
+                                
+                            }
+                        }
+                   }
+                   
+                }
+            }
+            mensaje = arr2.join('');
+            alert(mensaje)
+
+        }
+
+        function desencriptar()
+        {   
+            var arr = ["enter", "imes" ,"ai", "ober", "ufat"];
+            var arr2 = ["e", "i", "a", "o", "u"];
+            var mensaje = inputdesEncriptar.value;
+            mensaje = mensaje.toLowerCase()
+
+            for(var posicion = 0; posicion <  arr.length; posicion++)
+            {
+    
+                palabra = mensaje.indexOf(arr[posicion]);
+                var largo = arr[posicion].length
+                while (palabra >= 0)
+                {
+                    mensaje = mensaje.slice(0, palabra) + arr2[posicion] + mensaje.slice(palabra + largo);
+                    palabra = mensaje.indexOf(arr[posicion]);
+                }
+            }
+
+            alert(mensaje);
+        }
+
+
+        var buttonEncripar = document.querySelector("Encriptar");
+        button.onclick = encriptar;
+
+        var buttonDesencriptar = document.querySelector("Desencriptar");
+        button.onclick = encriptar;
+
+
+    </script>
+</body>
+</html>
