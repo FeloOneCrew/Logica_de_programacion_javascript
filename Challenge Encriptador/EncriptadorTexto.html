@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="encriptador.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Source+Code+Pro:ital@1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Source+Code+Pro:ital@1&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+    <title>Encriptador de texto</title>
+</head>
+<body>
+
+    <header>
+        <div class="container-Logo">
+            <img class="imglogo" src="images/alura.png" alt="Logo Alura">
+        </div>
+        <div class="bg-6">
+            <div class="conteniner-glitch">
+                <marquee behavior="alternate" direction=""><h1 class="glitch" data-text="ENCRIPTAR Y DESENCRIPTAR">ENCRIPTAR Y DESENCRIPTAR</h1></marquee>
+            </div>
+        </div>
+    </header>
+
+    <div class="container-all">
+        <div class="container-menu">
+            <main class="menu"> 
+            
+                <form class="formIngresarTexto" >
+                    <div class="container-textareaingresarTexto" id="container-textareaingresarTexto">
+                        <textarea id="textareaingresarTexto" class="textareaingresarTexto" cols="60" rows="40" placeholder="Ingresar mensaje" required autofocus></textarea>
+                    </div>
+                    <div>
+                        <input type="button" class="btnEncriptar" value=" Encriptar🔒" onclick="encriptar()">
+                        <input type="button" class="btnDesencriptar" value="Desencriptar🔓" onclick="desencriptar()">
+                    </div>
+                </form>
+             
+            </main>
+        </div>
+
+        <div class="container-aside">
+            <aside class="aside">
+                <img id="imagen-salida" class="imgSalida" src="images/NoEncontrada.png" alt="texto no encontrado">
+                <h1 id="texto-Salida" class="textoSalida">Ningun mensaje se ha encontrado</h1>
+
+                <form class="formSalidaTexto" name="CapturoTextarea">
+                    <div class="container-textareaSalirTexto">
+                        <textarea id="textareaSalirTexto" class="textareaSalirTexto" name="valorsalida" cols="40" rows="15" readonly></textarea>
+                    </div>  
+                </form>
+
+            </aside>
+            <div>
+                <input type="button" class="btnCopiar" value="Copiar📑" id="btnCopiar" onclick="copiarTexto()" disabled>
+                <input type="button" class="btnLimpiar" value="Limpiar🧹" id="btnLimpiar" onclick="limpiarTexto()">
+            </div>
+
+        </div>
+    </div>
+    
+</body>
+<footer class="foot">   
+    <div>
+        <div class="Container-marqueeFoot">
+            <marquee class="marqueeFoot" behavior="alternate" direction="center" scrolldelay="100"><p> 💻 Create by Andrés Felipe Gómez Herrera</p></marquee>
+        </div>
+    </div>
+
+    <div class="Container-redes">
+        <a href="https://github.com/FeloOneCrew" target="_blank">
+            <img src="https://img.icons8.com/sf-black-filled/30/1A1A1A/github.png"/>
+        </a>
+              
+        <a href="https://www.linkedin.com/in/andres-felipe-gomez-herrera/" target="_blank">
+            <img src="https://img.icons8.com/color/30/null/linkedin.png" />
+        </a>
+        <a href="https://www.instagram.com/felo_1upcrew" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="32" height="32" viewBox="0 0 24 24" stroke-width="1" stroke="#fd0061" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <rect x="4" y="4" width="16" height="16" rx="4" />
+            <circle cx="12" cy="12" r="3" />
+            <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
+            </svg>
+        </a>
+    </div>
+    
+</footer>
+</html>
