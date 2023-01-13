@@ -1,599 +1,518 @@
-body
+body 
 {
-    background-image: url("images/background.jpg");
+  background-image: url("images/background.jpg");
 }
 
-header
+header 
 {
-    display: grid;
-    grid-template-columns: 6% 94%;
-    grid-gap: 20px;
-    align-items: stretch;
-    justify-content: center;
-    text-align: center;
-    display: grid;
-    grid-gap: 0;
-    grid-template-rows: 100px 1fr;
+  display: grid;
+  grid-template-columns: 5.5% 94.5%;
+  grid-gap: 20px;
+  align-items: stretch;
+  justify-content: center;
+  text-align: center;
+  display: grid;
+  grid-gap: 0;
+  grid-template-rows: 100px 1fr;
 }
-.container-Logo
+
+.container-Logo 
 {
-    display: inline;
+  display: inline;
 }
-.imglogo
+
+.imglogo 
 {
-    display: inline-block;
-    width: 100px;
-    height: 100px;
+  display: inline-block;
+  width: 100px;
+  height: 100px;
 }
+
 /* EFCTO TITUTLO*/
-/*.glitch
-{
-    font-family: 'Monoton', cursive;
-    text-align: center;
-    font-size: 50px;
-    color: #4f555a;
-    padding: 15px 0 0 0;
-}*/
 
-.bg-6
+.bg-6 
 {
-    display: inline-block;
-    background-color: #A5BACA;
-    width:100%;
-    align-content: center;
-    align-items: center;
+  display: inline-block;
+  background-color: #A5BACA;
+  width: 100%;
+  align-content: center;
+  align-items: center;
 }
 
-.conteniner-glitch
+.conteniner-glitch 
 {
-    padding: 0 300px;
+  padding: 0 300px;
 }
 
-.glitch 
-{
-    color: white;
-    font-size: 45px;
-    position: relative;
-    margin: 10px auto;
-    padding: 10px;
-    font-family: 'Monoton', cursive;
- }
+.glitch {
+  color: white;
+  font-size: 45px;
+  position: relative;
+  margin: 10px auto;
+  padding: 10px;
+  font-family: 'Monoton', cursive;
+}
 
 .glitch:after 
 {
-    content: attr(data-text);
-    position: absolute;
-    left: 16px;
-    text-shadow: -1px 0 blue;
-    top: 0;
-    color: white;
-    background: #A5BACA;
-    overflow: hidden;
-    clip: rect(0, 900px, 0, 0);
-    animation: noise-anim 2s infinite linear alternate-reverse;
+  content: attr(data-text);
+  position: absolute;
+  left: 16px;
+  text-shadow: -1px 0 blue;
+  top: 0;
+  color: white;
+  background: #A5BACA;
+  overflow: hidden;
+  clip: rect(0, 900px, 0, 0);
+  animation: noise-anim 2s infinite linear alternate-reverse;
 }
 
 .glitch:before 
 {
-    content: attr(data-text);
-    position: absolute;
-    left: 8px;
-    text-shadow: 1px 0 blue;
-    top: 0;
-    color: white;
-    background: #A5BACA;
-    overflow: hidden;
-    clip: rect(0, 900px, 0, 0);
-    animation: noise-anim-2 3s infinite linear alternate-reverse;
+  content: attr(data-text);
+  position: absolute;
+  left: 8px;
+  text-shadow: 1px 0 blue;
+  top: 0;
+  color: white;
+  background: #A5BACA;
+  overflow: hidden;
+  clip: rect(0, 900px, 0, 0);
+  animation: noise-anim-2 3s infinite linear alternate-reverse;
 }
 
 @keyframes noise-anim 
 {
-    0% 
-    {
-      clip: rect(51px, 9999px, 28px, 0);
-    }
-    5% 
-    {
-      clip: rect(70px, 9999px, 19px, 0);
-    }
-    10% 
-    {
-      clip: rect(92px, 9999px, 13px, 0);
-    }
-    15% 
-    {
-      clip: rect(85px, 9999px, 49px, 0);
-    }
-    20% 
-    {
-      clip: rect(45px, 9999px, 56px, 0);
-    }
-    25% 
-    {
-      clip: rect(26px, 9999px, 31px, 0);
-    }
-    30% 
-    {
-      clip: rect(62px, 9999px, 73px, 0);
-    }
-    35% 
-    {
-      clip: rect(34px, 9999px, 11px, 0);
-    }
-    40% 
-    {
-      clip: rect(26px, 9999px, 61px, 0);
-    }
-    45% 
-    {
-      clip: rect(34px, 9999px, 71px, 0);
-    }
-    50% 
-    {
-      clip: rect(35px, 9999px, 69px, 0);
-    }
-    55% 
-    {
-      clip: rect(92px, 9999px, 81px, 0);
-    }
-    60% 
-    {
-      clip: rect(26px, 9999px, 85px, 0);
-    }
-    65% 
-    {
-      clip: rect(2px, 9999px, 68px, 0);
-    }
-    70% 
-    {
-      clip: rect(54px, 9999px, 79px, 0);
-    }
-    75% 
-    {
-      clip: rect(35px, 9999px, 85px, 0);
-    }
-    80% 
-    {
-      clip: rect(70px, 9999px, 60px, 0);
-    }
-    85% 
-    {
-      clip: rect(32px, 9999px, 26px, 0);
-    }
-    90% 
-    {
-      clip: rect(94px, 9999px, 53px, 0);
-    }
-    95% 
-    {
-      clip: rect(99px, 9999px, 92px, 0);
-    }
-    100% 
-    {
-      clip: rect(42px, 9999px, 27px, 0);
-    }
+  0% {
+    clip: rect(51px, 9999px, 28px, 0);
+  }
+
+  5% {
+    clip: rect(70px, 9999px, 19px, 0);
+  }
+
+  10% {
+    clip: rect(92px, 9999px, 13px, 0);
+  }
+
+  15% {
+    clip: rect(85px, 9999px, 49px, 0);
+  }
+
+  20% {
+    clip: rect(45px, 9999px, 56px, 0);
+  }
+
+  25% {
+    clip: rect(26px, 9999px, 31px, 0);
+  }
+
+  30% {
+    clip: rect(62px, 9999px, 73px, 0);
+  }
+
+  35% {
+    clip: rect(34px, 9999px, 11px, 0);
+  }
+
+  40% {
+    clip: rect(26px, 9999px, 61px, 0);
+  }
+
+  45% {
+    clip: rect(34px, 9999px, 71px, 0);
+  }
+
+  50% {
+    clip: rect(35px, 9999px, 69px, 0);
+  }
+
+  55% {
+    clip: rect(92px, 9999px, 81px, 0);
+  }
+
+  60% {
+    clip: rect(26px, 9999px, 85px, 0);
+  }
+
+  65% {
+    clip: rect(2px, 9999px, 68px, 0);
+  }
+
+  70% {
+    clip: rect(54px, 9999px, 79px, 0);
+  }
+
+  75% {
+    clip: rect(35px, 9999px, 85px, 0);
+  }
+
+  80% {
+    clip: rect(70px, 9999px, 60px, 0);
+  }
+
+  85% {
+    clip: rect(32px, 9999px, 26px, 0);
+  }
+
+  90% {
+    clip: rect(94px, 9999px, 53px, 0);
+  }
+
+  95% {
+    clip: rect(99px, 9999px, 92px, 0);
+  }
+
+  100% {
+    clip: rect(42px, 9999px, 27px, 0);
+  }
 }
 
-@keyframes noise-anim-2 
-{
-    0% 
-    {
-      clip: rect(21px, 9999px, 49px, 0);
-    }
-    5% 
-    {
-      clip: rect(27px, 9999px, 52px, 0);
-    }
-    10% 
-    {
-      clip: rect(21px, 9999px, 70px, 0);
-    }
-    15% 
-    {
-      clip: rect(65px, 9999px, 25px, 0);
-    }
-    20% 
-    {
-      clip: rect(24px, 9999px, 10px, 0);
-    }
-    25% 
-    {
-      clip: rect(61px, 9999px, 64px, 0);
-    }
-    30% 
-    {
-      clip: rect(34px, 9999px, 47px, 0);
-    }
-    35% 
-    {
-      clip: rect(46px, 9999px, 93px, 0);
-    }
-    40% 
-    {
-      clip: rect(46px, 9999px, 9px, 0);
-    }
-    45% 
-    {
-      clip: rect(67px, 9999px, 36px, 0);
-    }
-    50% 
-    {
-      clip: rect(72px, 9999px, 20px, 0);
-    }
-    55% 
-    {
-      clip: rect(79px, 9999px, 26px, 0);
-    }
-    60% 
-    {
-      clip: rect(13px, 9999px, 87px, 0);
-    }
-    65% 
-    {
-      clip: rect(10px, 9999px, 25px, 0);
-    }
-    70% 
-    {
-      clip: rect(85px, 9999px, 11px, 0);
-    }
-    75% 
-    {
-      clip: rect(94px, 9999px, 35px, 0);
-    }
-    80% 
-    {
-      clip: rect(50px, 9999px, 86px, 0);
-    }
-    85% 
-    {
-      clip: rect(74px, 9999px, 67px, 0);
-    }
-    90% 
-    {
-      clip: rect(1px, 9999px, 40px, 0);
-    }
-    95% 
-    {
-      clip: rect(3px, 9999px, 48px, 0);
-    }
-    100% 
-    {
-      clip: rect(90px, 9999px, 23px, 0);
-    }
+@keyframes noise-anim-2 {
+  0% {
+    clip: rect(21px, 9999px, 49px, 0);
+  }
+
+  5% {
+    clip: rect(27px, 9999px, 52px, 0);
+  }
+
+  10% {
+    clip: rect(21px, 9999px, 70px, 0);
+  }
+
+  15% {
+    clip: rect(65px, 9999px, 25px, 0);
+  }
+
+  20% {
+    clip: rect(24px, 9999px, 10px, 0);
+  }
+
+  25% {
+    clip: rect(61px, 9999px, 64px, 0);
+  }
+
+  30% {
+    clip: rect(34px, 9999px, 47px, 0);
+  }
+
+  35% {
+    clip: rect(46px, 9999px, 93px, 0);
+  }
+
+  40% {
+    clip: rect(46px, 9999px, 9px, 0);
+  }
+
+  45% {
+    clip: rect(67px, 9999px, 36px, 0);
+  }
+
+  50% {
+    clip: rect(72px, 9999px, 20px, 0);
+  }
+
+  55% {
+    clip: rect(79px, 9999px, 26px, 0);
+  }
+
+  60% {
+    clip: rect(13px, 9999px, 87px, 0);
+  }
+
+  65% {
+    clip: rect(10px, 9999px, 25px, 0);
+  }
+
+  70% {
+    clip: rect(85px, 9999px, 11px, 0);
+  }
+
+  75% {
+    clip: rect(94px, 9999px, 35px, 0);
+  }
+
+  80% {
+    clip: rect(50px, 9999px, 86px, 0);
+  }
+
+  85% {
+    clip: rect(74px, 9999px, 67px, 0);
+  }
+
+  90% {
+    clip: rect(1px, 9999px, 40px, 0);
+  }
+
+  95% {
+    clip: rect(3px, 9999px, 48px, 0);
+  }
+
+  100% {
+    clip: rect(90px, 9999px, 23px, 0);
+  }
 }
 
-    
+
 /*TERMINA CODICO EFECTO TITULO*/
 
-.container-all
-{   
-    display: grid;
-    grid-gap: 20px;
-    justify-content: center;
-    text-align: center;
-    width: 95%;
-    max-width: 1200px;
-    min-height: 800px;
-    margin: 20px auto;
-    display: grid;
-    grid-gap: 20px;
-    grid-template-rows: 100px 1fr 50px 100px;
-    grid-template-areas:
-        "header header"
-        "contenido sidebar"
-        "widget1 widget2"
-        "footer footer";
-}
-
-.container-menu
+.container-all 
 {
- display: inline-block;
+  display: grid;
+  grid-gap: 20px;
+  justify-content: center;
+  text-align: center;
+  width: 95%;
+  max-width: 1100px;
+  min-height: 750px;
+  margin: 15px auto;
+  display: grid;
+  grid-gap: 15px 100px;
+  grid-template-rows: 100px 1fr 50px 100px;
+  grid-template-areas:
+  "header header"
+  "contenido sidebar"
+  "widget1 widget2"
+  "footer footer";
 }
 
-.menu
+.container-menu 
 {
-    display: inline-block;
-    justify-content: center;
+  display: inline-block;
 }
 
-.container-aside
+.menu 
 {
-    display: inline-block;
+  display: inline-block;
+  justify-content: center;
 }
 
-.aside
+.container-aside 
 {
-    justify-content: center;
-    background: #A5BACA;
-    width: auto;
-    border-radius: 5%;
-    height: 740px;
-
+  display: inline-block;
 }
 
-.textareaingresarTexto
+.aside 
 {
-    font-weight: bold;
-    border-radius: 20px;
-    padding: 30px;
-    background-color: #F5F5F5;
-    border-style: double #557892;
-    border-width: 3px;
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'Source Code Pro', monospace;
+  justify-content: center;
+  background: #A5BACA;
+  width: auto;
+  border-radius: 5%;
+  height: 661px;
 }
 
-.imgSalida
+.textareaingresarTexto 
 {
-    opacity: 0.3;
-    margin: 15px auto;
+  font-weight: bold;
+  border-radius: 20px;
+  padding: 30px;
+  background-color: #F5F5F5;
+  border-style: double #557892;
+  border-width: 3px;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Source Code Pro', monospace;
 }
 
-.estados
+.imgSalida 
 {
-    display: inline;    
+  opacity: 0.3;
+  margin: 15px auto;
+  height: 300px;
+  width: 254px;
+
 }
 
-.imgcerrado
+.estados 
 {
-    opacity: 0.3;
-    margin: 15px auto;
-    position: absolute;
-    height: 136px ;
-    width: 140px;
-    padding: 15px;
-    margin: 15px 50px 30px 0;
+  display: inline;
 }
 
-.imgabierto
+.textoSalida 
 {
-    opacity: 0.3;
-    margin: 15px auto;
-    position: absolute;
-    height: 136px ;
-    width: 140px;
+  opacity: 0.3;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Source Code Pro', monospace;
 }
 
-
-
-.textoSalida
+.textareaSalirTexto 
 {
-    opacity: 0.3;
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'Source Code Pro', monospace;
+  font-size: 20 px;
+  font-weight: bold;
+  border-radius: 20px;
+  margin: 7px 0 5px 0;
+  padding: 15px;
+  border: none;
+  background: #A5BACA;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Source Code Pro', monospace;
 }
 
-.textareaSalirTexto
-{   
-    font-size: 20 px;
-    font-weight: bold;
-    border-radius: 20px;
-    margin: 15px;
-    padding: 15px;
-    border: none;
-    background: #A5BACA;
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'Source Code Pro', monospace;
-}
-
-.btnEncriptar
+.btnEncriptar 
 {
-    width: 25%;
-    padding: 15px;
-    font-size: 15px;
-    font-weight: bold;
-    background: #8d99ae;
-    border-radius: 15px;
-    margin: 15px 50px 30px 0;
-    
+  width: 25%;
+  padding: 15px;
+  font-size: 15px;
+  font-weight: bold;
+  background: #8d99ae;
+  border-radius: 15px;
+  margin: 15px 50px 30px 0;
+
 }
 
-.btnEncriptar:hover
+.btnEncriptar:hover 
 {
-    background: #a3a7ad;
-    width: 35%;
-    font-size: 25px;
-    /*transition: 1s all;*/
+  background: #a3a7ad;
+  width: 35%;
+  font-size: 25px;
+  /*transition: 1s all;*/
 }
 
-.btnDesencriptar
+.btnDesencriptar 
 {
-    width: 25%;
-    padding: 15px;
-    font-size: 15px;
-    font-weight: bold;
-    background: #4B6A81;
-    border-radius: 15px;
-    margin: 15px 0 30px 50px;
+  width: 25%;
+  padding: 15px;
+  font-size: 13px;
+  font-weight: bold;
+  background: #4B6A81;
+  border-radius: 15px;
+  margin: 15px 0 30px 50px;
 }
 
-.btnDesencriptar:hover
+.btnDesencriptar:hover 
 {
-    background: #7693aa;
-    width: 35%;
-    font-size: 20px;
+  background: #7693aa;
+  width: 35%;
+  font-size: 20px;
 }
 
-.btnCopiar
+.btnCopiar 
 {
-    width: 25%;
-    padding: 15px;
-    font-size: 15px;
-    font-weight: bold;
-    background: #8d99ae;
-    border-radius: 15px;
-    margin: 15px 0 30px 50px;
+  width: 25%;
+  padding: 15px;
+  font-size: 15px;
+  font-weight: bold;
+  background: #8d99ae;
+  border-radius: 15px;
+  margin: 15px 0 30px 50px;
 }
 
-.btnCopiar:hover
+.btnCopiar:hover 
 {
-    background: #444a55;
-    width: 35%;
-    font-size: 25px;
+  background: #444a55;
+  width: 35%;
+  font-size: 25px;
 }
 
-.btnLimpiar
+.btnLimpiar 
 {
-    width: 25%;
-    padding: 15px;
-    font-size: 15px;
-    font-weight: bold;
-    background: #BFCED9;
-    border-radius: 15px;
-    margin: 15px 0 30px 50px;
+  width: 25%;
+  padding: 15px;
+  font-size: 15px;
+  font-weight: bold;
+  background: #BFCED9;
+  border-radius: 15px;
+  margin: 15px 0 30px 50px;
 }
 
-.btnLimpiar:hover
+.btnLimpiar:hover 
 {
-    background: #eff3f7;
-    width: 30%;
-    font-size: 20px;
+  background: #eff3f7;
+  width: 30%;
+  font-size: 20px;
 }
 
-.Container-marqueeFoot
+.Container-marqueeFoot 
 {
-    margin: 0 700px 0 700px;
+  margin: 0 300px 0 300px;
 }
 
-.foot
+.foot 
 {
-    text-align: center;
-    margin: 40px auto;
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'Source Code Pro', monospace;
+  text-align: center;
+  margin: 15px auto;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Source Code Pro', monospace;
 }
 
-.foot p
+.foot p 
 {
 
-    color:#8d99ae;
-    font-weight: bold;
+  color: #4a4c50;
+  font-weight: bold;
 }
 
-.marqueeFoot
+.marqueeFoot 
 {
-    margin: 10 auto;
-    display: block;
-    
+  margin: 10 auto;
+  display: block;
+
 }
 
-
-
-
-/*
-.container-Principal
+/*redes sociales*/
+.social-bar 
 {
-    background-color: #D6D6D6;
+  position: fixed;
+  right: 0;
+  top: 35%;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  z-index: 100;
 }
 
-.form-containerIngreso
+.icon 
 {
-    background-color: #D6D6D6;
-    display: inline-block;
-    justify-content: center;
-    margin: 20px 0 0 20px;
-    width: 48%;
-    text-align: center;
+  color: white;
+  text-decoration: none;
+  padding: .7rem;
+  display: flex;
+  transition: all .5s;
 }
 
-aside
+.icon-facebook 
 {
-    display:inline
+  background: #2E406E;
 }
 
-.form-containerSalida
+.icon-twitter 
 {
-    background-color: #D6D6D6;
-    display: inline-block;
-    justify-content: center;
-    margin: 20px 0 0 20px;
-    width: 48%;
-    text-align: center;
+  background: #339DC5;
 }
 
-.formIngresarTexto
+.icon-youtube {
+  background: #E83028;
+}
+
+.icon-instagram 
 {
-    margin: 0 auto;
-    text-align: center;
+  background: #bd25b0;
 }
 
-
-.formSalidaTexto
+.icon-linkedin 
 {
-    margin: 0 auto;
-    text-align: center;
+  background: #1a3672;
 }
 
-.container-textareaingresarTexto
+.icon-github 
 {
-    text-align: center;
+  background: #0e0d0d;
 }
 
-.textareaingresarTexto
+.icon:first-child 
 {
-
-    border-radius: 20px;
-    margin: 20px;
-    padding: 30px;
-    background-color: #F5F5F5;
-    border: none;
+  border-radius: 1rem 0 0 0;
 }
 
-.btnEncriptar
+.icon:last-child 
 {
-    width: 25%;
-    padding: 15px;
-    font-size: 15px;
-    font-weight: bold;
-    background: #ef233c;
-    border-radius: 15px;
-    margin: 15px 50px 30px 0;
-    
+  border-radius: 0 0 0 1rem;
 }
 
-.btnDesencriptar
+.icon:hover 
 {
-    width: 25%;
-    padding: 15px;
-    font-size: 15px;
-    font-weight: bold;
-    background: #8d99ae;
-    border-radius: 15px;
-    margin: 15px 0 30px 50px;
-    
+  padding-right: 3rem;
+  border-radius: 1rem 0 0 1rem;
+  box-shadow: 0 0 .5rem rgba(0, 0, 0, 0.42);
 }
-
-.container-textareaSalirTexto
-{
-    text-align: center;
-}
-.textareaSalirTexto
-{   
-    font-size: 20 px;
-    font-weight: bold;
-    border-radius: 20px;
-    margin: 20px;
-    padding: 30px;
-    border: none;
-}
-
-.btnCopiar
-{
-    width: 25%;
-    padding: 15px;
-    font-size: 15px;
-    font-weight: bold;
-    background: #003049;
-    border-radius: 15px;
-    color: #ffffff;
-    margin: 15px 0 30px 0;
-}
-
-.foot p
-{
-    text-align: center;
-    margin: 15;
-    padding: 15;
-}
-*/

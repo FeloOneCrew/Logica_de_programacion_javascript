@@ -1,13 +1,9 @@
-
-
-
 function encriptar()
 {
     btnCopiar.disabled = false;
     var input = document.querySelector(".textareaingresarTexto");
     var mensaje = input.value;
     mensaje = mensaje.toLowerCase()
-    //var texto = document.getElementsByClassName("textareaingresarTexto").value;
     var mensajeCifrado = mensaje.replace(/e/igm,"enter");
     mensajeCifrado = mensajeCifrado.replace(/i/igm,"imes");
     mensajeCifrado = mensajeCifrado.replace(/a/igm,"ai");
@@ -17,7 +13,7 @@ function encriptar()
     document.getElementById("imagen-salida").style.display = "none";
     document.getElementById("texto-Salida").style.display = "none";
     document.CapturoTextarea.valorsalida.value =  mensajeCifrado;
-    //document.getElementById("copiar").style.display = "inherit";
+    document.getElementById("btnCopiar").style.display = "inherit";
 }
 
 function desencriptar()
@@ -44,7 +40,7 @@ function desencriptar()
     document.getElementById("imagen-salida").style.display = "none"; //asi se indica para ocultar una imagen
     document.getElementById("texto-Salida").style.display = "none";
     document.CapturoTextarea.valorsalida.value =  mensaje;
-    //document.getElementById("copiar").style.display = "inherit";
+    document.getElementById("btnCopiar").style.display = "inherit";
 }
 
 function copiarTexto()
